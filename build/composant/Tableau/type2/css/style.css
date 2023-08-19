@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid white;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #333;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #555;
+}

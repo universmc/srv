@@ -1,0 +1,22 @@
+{
+  "name": "controller",
+  "version": "1.0.1",
+  "description": "apt controler",
+  "main": "srv",
+  "scripts": {
+    "test": "ctrl",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/universmc/"
+  },
+  "keywords": [
+    "ML",
+    "IA",
+    "agent",
+    "fullstack"
+  ],
+  "author": "chatgpt COauthor",
+  "license": "ISC"
+}
