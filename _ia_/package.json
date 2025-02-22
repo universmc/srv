@@ -1,0 +1,62 @@
+{
+  "name": "websitemakers",
+  "version": "1.0.0",
+  "description": "enquête approfondie sur un scandale politique au financier 2008 à 2025, rappart 49-3 en recidive illégale",
+  "main": "main.js",
+  "directories": {
+    "docs": "docs",
+    "build": "build",
+    "data": "data",
+    "src": "src",
+    "models": "models"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "groq": "node groq-min.js",
+    "saas": "sass --watch src/sass/style.scss src/css/style.css"
+  },
+  "Mistral": {
+      "model":"mixtral-8x7b-32768",
+      "temperature":0.5,
+      "max_tokens":"4096",
+      "top_p":"1",
+      "stream":"True",
+      "stop":"None"
+  },
+  "llma": {
+      "model":"llama3-8b-8192",
+      "temperature":0.5,
+      "max_tokens":"4096",
+      "top_p":"1",
+      "stream":"True",
+      "stop":"None"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GNU",
+  "dependencies": {
+    "@electron-forge/plugin-webpack": "^7.3.0",
+    "@tensorflow/tfjs": "^4.17.0",
+    "@tensorflow/tfjs-node": "^4.17.0",
+    "bootstrap": "^5.3.3",
+    "child_process": "^1.0.2",
+    "electron-forge": "^5.2.4",
+    "electron-router": "^0.5.1",
+    "express": "^4.18.3",
+    "fs": "^0.0.1-security",
+    "groq": "^3.32.0",
+    "groq-sdk": "^0.3.2",
+    "node-emoji": "^2.1.3",
+    "node-fetch": "^3.3.2",
+    "path": "^0.12.7",
+    "readline": "^1.3.0",
+    "speech-recognition": "^0.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "inquirer": "^10.2.0"
+  },
+  "devDependencies": {
+    "electron": "^29.1.2"
+  }
+}

@@ -1,0 +1,22 @@
+// Définition de votre thème en tant que thème principal
+$theme-colors: (
+  "primary": #375a7f,
+  "danger": #d9534f,
+  "warning": #f0ad4e,
+  "success": #00833e,
+  "info": #0069ff
+);
+ 
+// Importation des variables Bootstrap
+// @import "bootstrap/scss/variables";
+// 
+// // Importation des mixins Bootstrap
+// @import "bootstrap/scss/mixins/";
+//  
+// // Importation des composants Bootstrap que vous souhaitez utiliser (par exemple)
+// @import "bootstrap/scss/root";
+// @import "bootstrap/scss/reboot";
+// @import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+// @import "bootstrap/scss/containers";
+// // ...etc.

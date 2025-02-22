@@ -1,55 +1,109 @@
-# Define variables
-NODE_ENV = development
-NODE_PORT = 5144
-NODE_APP = index.js
+SHELL := /bin/bash
 
-COMMANDE1_MSG="✨ Menu ✨"
+COMMANDE1_MSG="✨ Lancement de l'application✨"
+COMMANDE2_MSG="✨ Initialisation de la session de Brainstormoming✨ "
+COMMANDE3_MSG="✨ brainstorming generation d idées ✨"
+COMMANDE4_MSG="✨ Initialisation du chatbot✨"
+COMMANDE5_MSG="✨ Initialisation du Prompt Model"
+COMMANDE6_MSG="🏗 Factory Generate Howto 📜 ✨"
+COMMANDE7_MSG="🏗 Factory Start Building composant 📦 ✨"
+COMMANDE8_MSG="🏗 Factory running Compose page 📦 ✨"
+COMMANDE9_MSG="✨ Mise à jour du repertoire sur github✨"
+COMMANDEU_MSG="✨ Mise à jour du repertoire sur github✨"
+COMMANDE10_MSG="✨Exit session✨"
+COMMANDEa_MSG="✨Test F2✨"
+COMMANDEa_MSG="✨Test F2✨"
 
-work_MSG="✨ Lancement de workplan.json✨"
-CTRL_MSG="✨ Lancement du contrôleur NES✨"
-COMMANDE1_MSG="✨ Lancement de groq server✨"
-cmd_MSG="✨ Lancement de l'application✨"
-map_MSG="✨ Lancement de l'application MapAscii✨"
+# Ajoutez une règle pour chaque commande
 
-groq:
-	@echo "${bot_MSG}"
-	@./telegram/groq.js
+commande1:
+	@echo "${COMMANDE2_MSG}"
+	@npm runb start
+	
+commande2:
+	@echo "${COMMANDE2_MSG}"
+	@./Pibot.sh
 
-bot:
-	@echo "${bot_MSG}"
-	@./models.sh
 
-qp:
-	@echo "${bot_MSG}"
-	@node qp.js
+commande3:
+	@echo "${COMMANDE3_MSG}"
+	@node .setup/brainstorming.js
 
-ctrl:
-	@echo "${CTRL_MSG}"
-	@node ctrl.js
+commande4:
+	@echo "${COMMANDE4_MSG}"
+	@node .setup/chatCompletion.js
 
-wp:
-	@echo "${work_MSG}"
-	@node workplan.js
-map:
-	@echo "${map_MSG}"
-	@npm run map
+commande5:
+	@echo "${COMMANDE5_MSG}"
+	@node .setup/myprompt.js
 
-# Makefile pour mapper les boutons du contrôleur NES
-.PHONY: bouton_a bouton_b bouton_start bouton_select map bot
+commande6:
+	@echo "${COMMANDE5_MSG}"
+	@node build/howto.js
 
-bouton_a:
-	@echo "🌴 Compiling project Bouton 🅰️  .. 🌴 🌴 .."
+commande7:
+	@echo "${COMMANDE5_MSG}"
+	@node build/Composants.js
 
-bouton_b:
-	@echo "✨ DevOps bouton 🅱️  ✨"
+commande8:
+	@echo "${COMMANDE5_MSG}"
+	@node src/app/composer.js
 
-bouton_start:
-	@echo "🔷 Starting the server...🔷 "
-	@./menu.sh
+commande9:
+	@echo "${COMMANDE9_MSG}"
+	@git add .
+	@git commit -m "Update"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
+commande10:
+	@echo "${COMMANDE10_MSG}"
 
-bouton_select:
-	@echo "💾 Pausing process or displaying status...💾 "
-menu:
+commandeg:
+	@echo "${COMMANDE10_MSG}"
+	@npm run start
+
+commandeA:
+	@echo "${COMMANDEa_MSG}"
+
+commandeP:
+	@echo "${COMMANDEP_MSG}"
+	@node models/Pi-ia_bot.js
+
+commandeN:
+	@echo "${COMMANDEN_MSG}"
+	@node neofs/noeFs_Pibot.js
+
+
+commandeG:
+	@echo "${COMMANDEN_MSG}"
+	@node models/gemini/Gemini_Pibot.js
+
+commandeW:
+	@echo "${COMMANDEW_MSG}"
+	@node workspace/worker_Pibot.js
+
+commandeY:
+	@echo "${COMMANDEW_MSG}"
+	@node public/youtube_Pibot.js
+
+commandeU:
+	@echo "${COMMANDEU_MSG}"
+	@node user/user_Pibot.js
+
+
+commandeM:
+	@echo "${COMMANDEM_MSG}"
+	@node data/meta_Pibot.js
+
+tasks:
+	@node .setup/role.mjs showTasks
+
+# Tâche Make pour ajouter une tâche
+add-task:
+	@node ./role.mjs addTask $(task)
+
+
+menu :
 	@echo "Welcom To cycliq Economical system."
 	@echo""
 	@echo"╔═════════════════════════════════════╗     ╔═════════════════════════════════════════════════════════════════════╗"
@@ -81,31 +135,15 @@ menu:
 
 MAGIC_TARGETS := codex build rep file script clean
 
-dev: tasks showTasks
+all: $(MAGIC_TARGETS)
 
-tasks:
-	@echo "✨ Initialisation Du plan d'action✨"
-	@node qp.js showTasks "/brainstrom 💰"
+srv : run start
 
-# Tâche Make pour ajouter une tâche
-showTasks:
-	@node qp.js addTask $(task)
-	@cat readme.md
-	@npm run start
-
-test :
-	@node qp.js
-
+start:
+	@npm start
 run:
 	@node ./srv/srv.js
 
-brainstorm:
-	@echo "✨ Initialisation de la session de brainstorming✨"
-	@node gdev.js
-	@echo "✨ Session terminée✨"
-
-
-all: $(MAGIC_TARGETS)
 
 update:
 	@echo "✨ Mise en état du dossier sur github✨"
@@ -113,55 +151,11 @@ update:
 	@git commit -m "test"
 	@git push
 	@echo "✨ Mise à jour terminée✨"
+S1:
+	@echo "✨ Mrun session brainstorming ✨"
+	@git add .
+	@git commit -m "sesssion brainstorm"
+	@git push
+	@echo "✨ Mise à jour terminée✨"
 
-init: gantt phase1 phase2 phase3 phase4 phase5 phase6 phase7 phase8
-# Magic COMPILER groq quantum
-gantt:
-	@echo "initialisation de l'instance"
-	@git clone auto
-
-seq1:
-	@echo "phase de conception"
-	@node mission.js
-
-seq2:
-	@echo "phase de configuration"
-	@node configuration.js
-
-seq3:
-	@echo "phase d'entrainnement du model IA"
-	@node models.js
-
-seq4:
-	@echo "phase de gestion et iteration du frontend"
-	@git clone src.js
-	
-seq5:
-	@echo "phase de gestion et iteration du backend"
-	@node srv.js
-
-
-seq6:
-	@echo "phase de test et debugage"
-	@node data.js
-
-seq7:
-	@echo "phase de validation documentation"
-	@node models/modelcss.js
-
-seq8:
-	@echo "phase d'affiliation et contribution"
-	@node models/modelcss.js
-
-server:
-	@node srv/Telegram/server.js
-	@echo "Unleashing quantum Magic Mafile with every script we shape" 
-# Ouvrez-vous aux dimensions cachées
-clean-r:
-	@echo "Returning the quantum realm to pristine state"
-	@rm -rf data/* build/* src/* data/*
-
-clean-R:
-	@echo "Unweaving the fabric, a celestial fate"@rm -rf output/ build/ src/ data/
-
-clean: clean-r clean-R
+.PHONY: sh commande1 commande2 commande3 commande4 commande5

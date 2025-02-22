@@ -1,0 +1,178 @@
+{
+    "name": "immersion-ai",
+    "version": "0.1.2",
+    "author": "Μιχαήλ",
+    "license": "GNU",
+    "private": true,
+    "main": "index.js",
+    "engines": {
+      "node": ">=8"
+    },
+    
+    "keywords": [
+        "map",
+        "console",
+        "terminal",
+        "ascii",
+        "osm",
+        "vectortile",
+        "mbtiles"
+    ],
+    "scripts": {
+        "dev": "next dev",
+        "style": "sass --watch src/scss/style.scss src/css/style.css",
+        "start": "electron .",
+        "srv": "json-server --watch db.json",
+
+        "react-dev": "concurrently \"npm run server\" \"npm run react-start\" \"npm run electron\"",
+        "server": "node index.js",
+        "react": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+
+        "compileSCSS": "sass --watch watch.scss src/css/fib.css",
+        "Mission": "sass --watch src/scss/mission.scss src/css/fib.css",
+        "scss": "sass --watch await.scss src/css/feuilles_style.css",
+        "code": "sass --watch src/scss/timeLines.scss src/css/timeCode.css",
+        "umc": "sass --watch src/scss/windows.scss src/css/player.css",
+        "hack": "sass --watch src/scss/VAT_collector_boutique.elysee_.scss src/css/boutique.css",
+        "custom": "sass --watch src/scss/custum.scss src/css/custum.css",
+        
+        "next": "next build",
+        "Next": "next start",
+        "map": "node main",
+        "lint": "next lint"
+    },
+    "Mistral": {
+        "model": "mixtral-8x7b-32768",
+        "temperature": 0.5,
+        "max_tokens": "4096",
+        "top_p": "1",
+        "stream": "True",
+        "stop": "None"
+    },
+    "llma": {
+        "model": "llama3-8b-8192",
+        "temperature": 0.5,
+        "max_tokens": "4096",
+        "top_p": "1",
+        "stream": "True",
+        "stop": "None"
+    },
+    "gemma": {
+        "model": "gemma-7b-it",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "temperature": 0.5,
+        "max_tokens": "4096",
+        "top_p": "1",
+        "stream": "True",
+        "stop": "None"
+    },
+    "gpt": {
+        "model": "gpt-4o",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "temperature": 0.5,
+        "max_tokens": "4096",
+        "top_p": "1",
+        "stream": "True",
+        "stop": "None"
+    },
+    "dependencies": {
+        "@google-cloud/functions-framework": "^3.4.2",
+        "@huggingface/hub": "^0.16.0",
+        "@influxdata/influxdb-client": "^1.35.0",
+        "@tensorflow/tfjs": "^4.17.0",
+        "@tensorflow/tfjs-node": "^4.17.0",
+        "axios": "^1.7.7",
+        "crypto": "^1.0.1",
+        "dotenv": "^16.4.5",
+        "electron": "^32.0.1",
+        "electron-packager": "^17.1.2",
+        "express": "^4.19.2",
+        "groq-sdk": "^0.7.0",
+        "inquirer": "^10.2.0",
+        "jimp": "^1.6.0",
+        "markdownlint": "^0.35.0",
+        "next": "^14.2.6",
+        "node-emoji": "^2.1.3",
+        "node-hid": "^3.1.0",
+        "npx": "^10.2.2",
+        "openai": "^4.60.1",
+        "p5": "^1.10.0",
+        "php": "^1.1.0",
+        "pytorch": "^0.0.1",
+
+        "react": "^18.3.1",
+        "react-dom": "^18",
+        "react-ga": "^3.3.0",
+        "react-ga4": "^1.4.1",
+        "react-scripts": "5.0.0",
+        "react-tooltip": "^4.2.21",
+
+
+        "remark": "^15.0.1",
+        "sass": "^1.78.0",
+        "telegraf": "^4.16.3",
+        "tone": "^15.0.4",
+        "transformer": "^1.2.8",
+        "vercel": "^37.4.2",
+        "webpack": "^5.94.0",
+
+        "diffuser": "^2.0.1",
+
+        "@mapbox/vector-tile": "^1.3.1",
+        "bluebird": "^3.7.2",
+        "bresenham": "0.0.4",
+        "earcut": "^2.2.2",
+        "keypress": "^0.2.1",
+        "node-fetch": "^2.6.0",
+        "pbf": "^3.2.1",
+        "rbush": "^3.0.1",
+        "simplify-js": "^1.2.4",
+        "string-width": "^4.2.0",
+        "term-mouse": "^0.2.2",
+        "userhome": "^1.0.0",
+        "x256": "0.0.2",
+
+        "@tailwindui/react": "^0.1.1",
+        "@testing-library/jest-dom": "^5.16.1",
+        "@testing-library/react": "^12.1.2",
+        "@testing-library/user-event": "^13.5.0"
+
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.2",
+        "@babel/preset-env": "^7.25.4",
+        "@types/debug": "^4.1.12",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "babel-loader": "^9.1.3",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.6",
+        "json-loader": "^0.5.7",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5",
+        "webpack-cli": "^5.1.4"
+    },
+    "eslintConfig": {
+        "extends": [
+          "react-app",
+          "react-app/jest"
+        ]
+      },
+      "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          "last 1 chrome version",
+          "last 1 firefox version",
+          "last 1 safari version"
+        ]
+      }
+}

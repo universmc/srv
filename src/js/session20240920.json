@@ -1,0 +1,77 @@
+{
+    "timeline": [
+      {
+        "start_time": "21:00",
+        "end_time": "21:30",
+        "goal": "Préparation de l'environnement de développement et installation des outils nécessaires",
+        "status": "Completed"
+      },
+      {
+        "start_time": "21:30",
+        "end_time": "22:00",
+        "goal": "Préparation de la structure et rédaction du contenu pour la page d'accueil",
+        "status": "In progress"
+      },
+      {
+        "start_time": "22:00",
+        "end_time": "23:00",
+        "goal": "Design de la page d'accueil et intégration des éléments clés de l'IA",
+        "status": "In progress"
+      },
+      {
+        "start_time": "23:00",
+        "end_time": "00:00",
+        "goal": "Routage de l'IA et organisation des sections principales",
+        "status": "To do"
+      },
+      {
+        "start_time": "00:00",
+        "end_time": "01:00",
+        "goal": "Développement de l'aspect réseau pour l'IA",
+        "status": "To do"
+      },
+      {
+        "start_time": "01:00",
+        "end_time": "02:00",
+        "goal": "Définition et Préparation de la Charte Graphique et de la Feuille de Style",
+        "tasks": [
+          "Déterminer les couleurs principales et secondaires à utiliser",
+          "Choisir des polices de caractères",
+          "Décider des styles de boutons, icônes et éléments graphiques",
+          "Créer un fichier CSS de base avec styles globaux",
+          "Définir des classes réutilisables pour les titres, paragraphes, etc."
+        ],
+        "status": "To do"
+      },
+      {
+        "start_time": "02:00",
+        "end_time": "03:00",
+        "goal": "Création du Contenu de Présentation du Blog",
+        "tasks": [
+          "Planifier les vidéos d'introduction",
+          "Définir un script pour chaque vidéo",
+          "Utiliser OBS Studio ou DaVinci Resolve pour enregistrer et monter les vidéos",
+          "Intégrer les vidéos sur le blog WordPress"
+        ],
+        "status": "To do"
+      },
+      {
+        "start_time": "03:00",
+        "end_time": "04:00",
+        "goal": "Finalisation et Tests",
+        "tasks": [
+          "Développer ou ajuster des plugins pour automatiser la production de contenu",
+          "Tester le blog sur différents navigateurs et appareils",
+          "Effectuer des tests de performance et accessibilité",
+          "Ajuster en fonction des retours"
+        ],
+        "status": "To do"
+      }
+    ],
+    "summary": {
+      "total_hours": 9,
+      "completed_tasks": 2,
+      "in_progress_tasks": 2,
+      "remaining_tasks": 5
+    }
+  }

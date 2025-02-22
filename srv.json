@@ -1,0 +1,16 @@
+{
+    "repos": [
+        {
+            "id": 1,
+            "nom": "copilote",
+            "description": "Un outil d'aide à la rédaction de code",
+            "url": "https://github.com/universmc/copilote"
+        },
+        {
+            "id": 2,
+            "nom": "mon-autre-projet",
+            "description": "Un autre projet intéressant",
+            "url": "https://github.com/universmc/mon-autre-projet"
+        }
+    ]
+}

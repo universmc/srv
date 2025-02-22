@@ -1,0 +1,31 @@
+{
+  "id": 1,
+  "nom": "system",
+  "description": "Rôle Système",
+  "emoji": "🛰 ",
+  "compétences": [
+  {
+  "id": 1,
+  "nom": "Administration Système",
+  "description": "Compétences pour gérer et maintenir l'infrastructure système",
+  "emoji": "⚙️"
+  },
+  {
+  "id": 2,
+  "nom": "Sécurité",
+  "description": "Compétences liées à l'assurance de la sécurité du système et à la protection des données",
+  "emoji": "🔒"
+  },
+  {
+  "id": 3,
+  "nom": "Automatisation",
+  "description": "Compétences pour automatiser les processus et tâches systèmes",
+  "emoji": "🤖"
+  }
+  ],
+  "contexte": "Production",
+  "tâche": "Maintenance et surveillance du système",
+  "processus": "Cadre ITIL",
+  "caractéristiques": "Analytique, souci du détail, résolveur de problèmes"
+  }
+  

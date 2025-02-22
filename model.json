@@ -1,0 +1,14 @@
+{
+    "name": "system",
+    "description": "Test model",
+    "inputs": [
+        {
+            "name": "input"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "output"
+        }
+    ]
+}

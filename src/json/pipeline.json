@@ -1,0 +1,183 @@
+[       
+    {
+    "titre": "New",
+    "sousSections": [
+        {
+            "sousTitre": "Introduction",
+            "contenu": "Présentation de l'agent IA le développement WEV."
+        },
+        {
+            "sousTitre": "FullStack",
+            "contenuMarkdown": "src/md/cours-fullstack.md"
+        }
+    ]
+    },
+    {
+        "titre": "DevOps",
+        "sousSections": [
+            {
+                "sousTitre": "Introduction au DevOps",
+                "contenuMarkdown": "md/cours-devops.md"
+            },
+            {
+                "sousTitre": "Déploiement et Maintenance",
+                "contenu": "Bonnes pratiques pour le déploiement et la maintenance des applications web."
+            }
+        ]
+    },
+    {
+        "titre": "Front-End",
+        "sousSections": [
+            {
+                "sousTitre": "HTML",
+                "contenuMarkdown": "md/cours-frontend-html.md"
+            },
+            {
+                "sousTitre": "CSS",
+                "contenuMarkdown": "md/cours-frontend-css.md"
+            },
+            {
+                "sousTitre": "SASS",
+                "contenuMarkdown": "md/cours-frontend-sass.md"
+            },
+            {
+                "sousTitre": "ASCII Art en Web Design",
+                "contenuMarkdown": "md/cours-frontend-ascii.md"
+            },
+            {
+                "sousTitre": "SVG en Tensors",
+                "contenuMarkdown": "md/cours-frontend-svg.md"
+            },
+            {
+                "sousTitre": "JavaScript",
+                "contenuMarkdown": "md/cours-frontend-javascript.md"
+            },
+            {
+                "sousTitre": "React",
+                "contenuMarkdown": "md/cours-frontend-react.md"
+            }
+        ]
+    },
+    {
+        "titre": "Back-End",
+        "sousSections": [
+            {
+                "sousTitre": "PHP",
+                "contenuMarkdown": "md/cours-backend-php.md"
+            },
+            {
+                "sousTitre": "SQL",
+                "contenuMarkdown": "md/cours-backend-sql.md"
+            },
+            {
+                "sousTitre": "nodejs",
+                "contenuMarkdown": "md/cours-backend-sql.md"
+            },
+            {
+                "sousTitre": "Python",
+                "contenu": "Scripting, analyse de données et intégration avec des frameworks web."
+            },
+            {
+                "sousTitre": "Node.js et Swagger",
+                "contenuMarkdown": "md/swagger.md"
+            },
+            {
+                "sousTitre": "JSON",
+                "contenuMarkdown": "md/cours-backend-json.md"
+            }
+        ]
+    },
+    {
+        "titre": "IA",
+        "sousSections": [
+            {
+                "sousTitre": "Introduction à l'IA",
+                "contenu": "Présentation de l'agent IA Codex GPT pour le développement fullstack."
+            },            {
+                "sousTitre": "Développement Assisté par IA",
+                "contenu": "Comment NeoFS peut aider dans la génération de code front-end et back-end."
+            },
+            {
+                "sousTitre": "IA prompt",
+                "contenuMarkdown": "md/cours-ia-prompt.md"
+            },
+            {
+                "sousTitre": "lib GPT",
+                "contenuMarkdown": "md/cours-ia-gpt.md"
+            },
+            {
+                "sousTitre": "lib pytorch",
+                "contenuMarkdown": "md/cours-ia-pytorch.md"
+            },
+            {
+                "sousTitre": "lib Tensorflow",
+                "contenuMarkdown": "md/cours-ia-tensorflow.md"
+            }
+
+
+        ]
+    },    
+    {
+        "titre": "Modèle",
+        "sousSections": [
+        {
+        "contenu": "techniques et methodes avancées pour construire des modèles d'IA...",
+        "contenuMarkdown": "md/howto.md"
+    }]
+    },  
+    {
+        "titre": "Projets",
+        "sousSections": [
+            {
+                "sousTitre": "Présentation Structurée",
+                "contenu": "Organiser le contenu du cours de manière logique et intuitive."
+            },
+            {
+                "sousTitre": "Ateliers Fullstack",
+                "contenu": "Création de projets intégrant front-end et back-end."
+            },
+            {
+                "sousTitre": "Utilisation de React, Node.js, et Bases de Données dans des Projets Concrets",
+                "contenu": "..."
+            },
+            {
+                "sousTitre": "Projets guidés par NeoFS",
+                "contenu": "Utilisation de l'IA pour optimiser et générer des éléments de code dans des projets réels."
+            },
+            {
+                "sousTitre": "Génération Dynamique du Sommaire",
+                "contenuMarkdown": "md/generation_dynamique_du_sommaire.md"
+            }
+        ]
+    },      
+    {
+        "titre": "Ressources",
+        "sousSections": [
+            {
+                "sousTitre": "Récapitulatif des Technologies et Concepts Clés",
+                "contenu": "..."
+            },
+            {
+                "sousTitre": "Ressources pour Approfondissement",
+                "contenu": "Livres, tutoriels en ligne, communautés de développement."
+            }
+        ]
+    },
+    {
+        "titre": "Conseils",
+        "sousSections": [
+            {
+                "sousTitre": "Interactivité avec l'IA",
+                "contenu": "Intégrer des démonstrations interactives où NeoFS génère des exemples de code en temps réel."
+            },
+            {
+                "sousTitre": "Projets Pratiques",
+                "contenu": "Encourager les étudiants à travailler sur des projets qui couvrent à la fois le front-end et le back-end, en utilisant les technologies apprises."
+            },
+            {
+                "sousTitre": "Feedback Continu",
+                "contenu": "Utiliser les retours des étudiants pour améliorer et adapter le contenu du cours."
+            }
+        ]
+    }
+]

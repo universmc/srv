@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeGenius</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suivi en temps réel des satellites</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="path/to/groq-sdk.js"></script>
+    <script>
+        // Initialiser la carte avec Leaflet.js
+        var map = L.map('map').setView([48.8588443, 2.2943506], 2); // Coordonnées de départ (Paris)
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Exemple de coordonnées de satellites (à remplacer par des requêtes dynamiques)
+        var satellites = [
+            { name: "Satellite 1", lat: 48.8588443, lon: 2.2943506 },
+            { name: "Satellite 2", lat: 40.712776, lon: -74.005974 },
+            { name: "Satellite 3", lat: 34.052235, lon: -118.243683 }
+        ];
+
+        // Fonction pour ajouter des marqueurs à la carte
+        function ajouterSatellite(satellite) {
+            L.marker([satellite.lat, satellite.lon]).addTo(map)
+                .bindPopup(`<b>${satellite.name}</b><br>Latitude: ${satellite.lat}<br>Longitude: ${satellite.lon}`)
+                .openPopup();
+        }
+
+        // Ajouter les satellites à la carte
+        satellites.forEach(satellite => {
+            ajouterSatellite(satellite);
+        });
+
+        // Exemple d'utilisation de groq-sdk pour récupérer des données en temps réel
+        const groq = new Groq();
+        async function fetchSatelliteData() {
+            try {
+                // Exemple de requête pour obtenir des coordonnées satellites en temps réel
+                const satelliteData = await groq.query('YOUR_QUERY_HERE');
+                satelliteData.forEach(data => {
+                    ajouterSatellite({
+                        name: data.name,
+                        lat: data.latitude,
+                        lon: data.longitude
+                    });
+                });
+            } catch (error) {
+                console.error("Erreur lors de la récupération des données satellites :", error);
+            }
+        }
+
+        // Appel de la fonction pour récupérer les données en temps réel
+        fetchSatelliteData();
+    </script>
+</body>
+</html>

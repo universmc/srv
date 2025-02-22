@@ -1,0 +1,1 @@
+mkdir logs metrics dashboards reports scripts
