@@ -1,18 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>dev</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent IA Web Worker Builder</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>build</h1>
+        <h1>Agent IA Web Worker Builder</h1>
+        <p>Développez et testez vos agents IA directement dans votre navigateur.</p>
     </header>
 
     <main>
+        <section id="code-editor">
+            <h2>Éditeur de code</h2>
+            <textarea id="agent-code"></textarea>
+            <button id="run-agent">Exécuter l'agent</button>
+        </section>
+
+        <section id="agent-output">
+            <h2>Sortie de l'agent</h2>
+            <div id="output"></div>
+        </section>
     </main>
-<footer></footer>
-    <script src="renderer.js"></script>
+
+    <footer>
+        <p>&copy; 2023 Mon Projet</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
